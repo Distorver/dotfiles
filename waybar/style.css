@@ -1,0 +1,188 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono NFP";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+window#waybar {
+  /* transition-property: background-color; */
+  /* transition-duration: 0.5s; */
+  /* background-color: #1e1e2e; */
+  /* background-color: #181825; */
+  background-color: rgba(24, 24, 37, 0.6);
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  /* background-color: #181825; */
+  background-color: #1e1e2e;
+  color: #89b4fa;
+}
+
+#workspaces button:hover {
+  color: #1e1e2e;
+  background-color: #89b4fa;
+}
+
+#workspaces button.active {
+  background-color: #1e1e2e;
+  color: #89b4fa;
+}
+
+#workspaces button.urgent {
+  background-color: #1e1e2e;
+  color: #f38ba8;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris,
+#battery,
+#network,
+#temperature,
+#backlight,
+#power-profiles-daemon,
+#bluetooth {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  /* background-color: #181825; */
+  background-color: #1e1e2e;
+}
+
+#bluetooth {
+  color: #89b4fa;
+}
+
+#bluetooth.disabled {
+  color: #a6adc8;
+}
+
+#backlight {
+  color: #cdd6f4;
+}
+
+#mpris.playing {
+  color: #a6e3a1;
+}
+
+#mpris.paused {
+  color: #9399b2;
+}
+
+#network {
+  color: #cdd6f4;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #585b70;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #b4befe;
+}
+
+#memory {
+  color: #cba6f7;
+}
+
+#clock {
+  color: #74c7ec;
+}
+
+#clock.simpleclock {
+  color: #89b4fa;
+}
+
+#window {
+  color: #cdd6f4;
+}
+
+#pulseaudio {
+  color: #b4befe;
+}
+
+#pulseaudio.muted {
+  color: #a6adc8;
+}
+
+#custom-logo {
+  color: #89b4fa;
+}
+
+#custom-power {
+  color: #f38ba8;
+}
+
+#temperature {
+  color: #a6e3a1;
+}
+
+#power-profiles-daemon.performance {
+  color: #f38ba8;
+}
+
+#power-profiles-daemon.balanced {
+  color: #e3dca1;
+}
+
+#power-profiles-daemon.power-saver {
+  color: #a6e3a1;
+}
+
+#battery.warning {
+  color: #e3dca1;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#battery.critical {
+  color: #f38ba8;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#battery.plugged,
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#battery {
+  color: #94e2d5;
+}
+
+tooltip {
+  background-color: #181825;
+  /* border: 2px solid #89b4fa; */
+}
+
+@keyframes pulse {
+  0% {
+    color: #999;
+  }
+  50% {
+    color: currentColor;
+  }
+  100% {
+    color: #999;
+  }
+}
