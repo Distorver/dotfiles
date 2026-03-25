@@ -1,0 +1,25 @@
+.theme-dark {{
+        --background-primary: {background} !important;
+        --background-secondary: {background} !important;
+        --titlebar-background-focused: {background} !important;
+        --background-modifier-form-field: {background} !important;
+        --background-modifier-border-focus: {color1}33 !important;
+        --divider-color: {color1}33 !important;
+        --background-modifier-cover: {background} !important;
+        --prompt-border-color: {color1}33 !important;
+        --layer-1: {color1}33 !important;
+        --background-modifier-border: {color1}77 !important;
+        --interactive-normal: var(--layer-1) !important;
+        --text-faint: {color1}77 !important;
+        --background-modifier-border-hover: {color1}33 !important;
+        --indentation-guide-color: {color1}33 !important;
+        --indentation-guide-color-active: {color1}77 !important;
+}}
+
+.theme-dark .nav-folder-title-content::before {{
+        color: {color1}77 !important;
+}}
+
+body {{
+  --tab-stacked-pane-width: 100%;
+}}
