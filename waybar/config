@@ -38,6 +38,7 @@
     "exec": "spotifatius monitor"
   },
   "mpris": {
+    "player": "spotify",
     "dynamic-order": [
       "artist",
       "title"

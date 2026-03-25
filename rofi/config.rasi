@@ -39,7 +39,7 @@ entry {
 listview {
     enabled: true;
     columns: 1;
-    lines: 8;
+    lines: 9;
     cycle: true;
     dynamic: true;
     scrollbar: false;
@@ -47,8 +47,14 @@ listview {
     reverse: false;
     fixed-height: true;
     fixed-columns: true;
-    spacing: 5px;
-    padding: 10px;
+    spacing: 8px;
+    padding: 0px;
     margin: 0px;
     background-color: transparent;
 }
+
+element {
+    padding: 5px ;
+}
+
+
