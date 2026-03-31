@@ -2,7 +2,7 @@ DIR=~/Pictures/wallpapers/
 PICS=($(ls ${DIR}))
 
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
-swww img ${DIR}/${RANDOMPICS} --transition-fps 60 --transition-type any --transition-duration 3
+awww img ${DIR}/${RANDOMPICS} --transition-fps 60 --transition-type any --transition-duration 3
 wal -i ${DIR}/${RANDOMPICS}
 cp ~/.cache/wal/colors-hyprland.conf ~/.config/hypr/look/colors.conf
 cp ~/.cache/wal/color.ini ~/.config/spicetify/Themes/text/color.ini
