@@ -1,0 +1,53 @@
+@import "/home/thinkpad/.cache/wal/colors-waybar.css";
+
+* {
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+button {
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-size: 22px;
+  outline-style: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: @background;
+  color: @foreground;
+}
+
+button:focus,
+button:active {
+  background-size: 35%;
+  /* background-color: @color2; */
+  outline-style: none;
+}
+
+#logout {
+  background-image: image(url("icons/log-out.svg"));
+  border-radius: 0;
+  margin: 0;
+}
+
+#suspend {
+  background-image: image(url("icons/suspend.svg"));
+  border-radius: 0;
+  margin: 0;
+}
+
+#shutdown {
+  background-image: image(url("icons/shut-down.svg"));
+  border-radius: 0;
+  margin: 0;
+}
+
+#reboot {
+  background-image: image(url("icons/reboot.svg"));
+  border-radius: 0;
+  margin: 0;
+}
