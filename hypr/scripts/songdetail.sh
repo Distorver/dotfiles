@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [[ $(playerctl -p spotify status 2>/dev/null) == "Playing" ]]; then
-    status=''
+    status=''
 else
-    status=' '
+    status=''
 fi
 
 song_info=$(playerctl -p spotify metadata --format "$status {{title}} - {{artist}}")
