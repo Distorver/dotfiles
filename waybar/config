@@ -50,7 +50,8 @@
     },
     "player-icons": {
       "default": ""
-    }
+    },
+    "max-length": 40
   },
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -60,7 +61,8 @@
     "active-only": false
   },
   "hyprland/window": {
-    "format": "{title}"
+    "format": "{title}",
+    "max-length": 40
   },
   "tray": {
     "show-passive-items": true,
@@ -117,7 +119,8 @@
         " "
       ]
     },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
   },
   "custom/sep": {
     "format": "|",
