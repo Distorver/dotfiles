@@ -1,0 +1,68 @@
+@import "~/.cache/wal/colors-rofi-dark"
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 true;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "JetBrains Mono Nerd Font 10";
+}
+
+/*****----- Main Window -----*****/
+window {
+    location:                    center;
+    width:                       58%;
+    height:                      34.5%;
+}
+
+/*****----- Main Layout -----*****/
+mainbox {
+    orientation:                 vertical;
+    children:                    [ "listbox" ];
+}
+
+listbox {
+    orientation:                 vertical;
+    children:                    [ "listview" ];
+    height : 100%;
+}
+
+/*****----- Listview: Icon Grid -----*****/
+listview {
+    columns:                     3;
+    lines:                       1;
+    layout:                      vertical;
+    fixed-columns:               true;
+    fixed-height:                true;
+    dynamic:                     false;
+    background-color:            @background;
+    height : 100%;
+}
+
+/*****----- Element Styling -----*****/
+element {
+    background-color:            transparent;
+    horizontal-align:            0.5;
+    padding: 0 10px;
+    height: 100%;
+}
+element selected.normal {
+    background-color:            @foreground;
+    padding: 0 10px;
+    height: 100%;
+
+}
+element-icon {
+    padding: 0 10px;
+    size: 30%;
+    background-color:            transparent;
+    height: 100%;
+}
+element-text {
+    text-color:                  transparent;
+    background-color:            transparent;
+    padding:                     0px;
+    font:                        "JetBrains Mono Nerd Font 0";
+}
