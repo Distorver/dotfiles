@@ -87,7 +87,7 @@
         },
         {
           "label": "",
-          "command": "wlogout"
+          "command": "wlogout -b 4"
         }
       ]
     }
