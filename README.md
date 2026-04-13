@@ -31,19 +31,12 @@ This setup is built on **Arch Linux** and optimized for a **ThinkPad** workflow.
 | Layer | Component |
 | :--- | :--- |
 | **Compositor** | Hyprland |
-| **Status Bar** | Waybar (custom CSS modules) |
-| **Notifications** | SwayNC (Sway Notification Center) |
-| **Launcher** | Rofi-wayland |
+| **Status Bar** | Waybar |
+| **Notifications** | SwayNC |
+| **Launcher** | Rofi |
 | **Colors** | Generated via Pywal |
 | **Terminal** | Kitty |
 
----
 
-## 📜 Dotfiles
-The configuration files for this setup can be found in the [`.config`](./.config) directory. 
-
-* **Hyprland**: Window rules, keybinds, and monitor scaling.
-* **Waybar**: Layout and styling for system monitoring.
-* **Rofi**: Custom themes for app launching and power menus.
 
 ---
